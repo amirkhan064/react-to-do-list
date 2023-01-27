@@ -1,0 +1,20 @@
+.CreateTask {
+  margin: 1rem 0;
+}
+
+.CreateTask input {
+  padding: 8px 1rem;
+  border: none;
+  background: #eee;
+  border-radius: 4px;
+  width: 75%;
+}
+
+.CreateTask button {
+  margin-left: 8px;
+  border: none;
+  padding: 8px 1rem;
+  background: rgb(202, 146, 4);
+  border-radius: 4px;
+  color: #fff;
+}

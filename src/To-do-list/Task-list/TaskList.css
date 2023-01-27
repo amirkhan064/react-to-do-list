@@ -1,0 +1,35 @@
+.TaskList {
+  background: #eee;
+  padding: 8px;
+}
+
+.TaskList ul li {
+  list-style: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.TaskList ul li:hover {
+  background: #fff;
+}
+
+.TaskList ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.TaskList ul li span button {
+  margin: 0 4px;
+  background: #fff;
+  border: none;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.TaskList ul li span button:hover {
+  background: rgb(202, 146, 4);
+  color: #fff;
+}

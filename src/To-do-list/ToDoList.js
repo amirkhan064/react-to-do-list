@@ -10,9 +10,13 @@ function ToDoList() {
     { name: 'Stay away from Sunio.', status: 1 },
   ]);
 
+  function getNewTask(task) {
+    setToDoListArr([...toDoListArr, ...[{ name: task, status: 0 }]]);
+  }
+
   return (
     <div className='ToDoList'>
-      <CreateTask />
+      <CreateTask getNewTask={getNewTask} />
       <TaskList tasksList={toDoListArr} />
     </div>
   );

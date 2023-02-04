@@ -1,5 +1,6 @@
 import './CreateTask.css';
 import React, { useEffect, useState } from 'react';
+
 function CreateTask(props) {
   const [task, setTask] = useState('');
   let editIndex = props?.editTaskInfo?.index;

@@ -17,14 +17,21 @@ function TaskList(props) {
       <ul>
         {tasksList.map((task, i) => (
           <li key={i}>
-            <span>{task?.name}</span>
+            {!task?.status ? (
+              <span>{task?.name}</span>
+            ) : (
+              <span>
+                <del>blue</del>
+              </span>
+            )}
             {task?.status ? (
-              'Completed'
+              <span>
+                <button onClick={() => taskAction(task, 3, i)}>❌</button>
+              </span>
             ) : (
               <span>
                 <button onClick={() => taskAction(task, 1, i)}>✏️</button>
                 <button onClick={() => taskAction(task, 2, i)}>✔️</button>
-                <button onClick={() => taskAction(task, 3, i)}>❌</button>
               </span>
             )}
           </li>

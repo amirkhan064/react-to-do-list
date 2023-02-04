@@ -6,7 +6,7 @@
 
 .TaskList ul li {
   list-style: none;
-  padding: 8px;
+  padding: 8px 4px;
   cursor: pointer;
 }
 
@@ -17,10 +17,19 @@
 .TaskList ul li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.TaskList ul li span:first-child {
+  max-width: 190px;
+}
+
+.TaskList ul li span {
+  display: block;
 }
 
 .TaskList ul li span button {
-  margin: 0 4px;
+  margin: 0 2px;
   background: #fff;
   border: none;
   padding: 4px 8px;

@@ -1,13 +1,17 @@
 .CreateTask {
   margin: 1rem 0;
 }
+.CreateTask form {
+  display: flex;
+  justify-content: space-around;
+}
 
 .CreateTask input {
   padding: 8px 1rem;
   border: none;
   background: #eee;
   border-radius: 4px;
-  width: 75%;
+  width: 73%;
 }
 
 .CreateTask button {

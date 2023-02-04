@@ -32,6 +32,7 @@ function TaskList(props) {
               <span>
                 <button onClick={() => taskAction(task, 1, i)}>✏️</button>
                 <button onClick={() => taskAction(task, 2, i)}>✔️</button>
+                <button onClick={() => taskAction(task, 3, i)}>❌</button>
               </span>
             )}
           </li>

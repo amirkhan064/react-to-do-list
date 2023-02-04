@@ -1,7 +1,8 @@
 import './CreateTask.css';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 function CreateTask(props) {
   const [task, setTask] = useState('');
+  let editIndex = props?.editTaskInfo?.index;
 
   function handleTaskChange(event) {
     console.log('handleTaskChange =====', event);
@@ -9,9 +10,14 @@ function CreateTask(props) {
   }
 
   function createTask() {
-    props.getNewTask(task);
+    props.getNewTask(task, editIndex);
     setTask('');
+    editIndex = null;
   }
+
+  useEffect(() => {
+    setTask(props?.editTaskInfo?.name);
+  }, [props?.editTaskInfo?.name]);
 
   return (
     <div className='CreateTask'>

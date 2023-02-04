@@ -1,6 +1,7 @@
 .TaskList {
   background: #eee;
   padding: 8px;
+  border-radius: 4px;
 }
 
 .TaskList ul li {
@@ -30,6 +31,6 @@
 }
 
 .TaskList ul li span button:hover {
-  background: rgb(202, 146, 4);
   color: #fff;
+  border: 1px solid rgb(252, 194, 5);
 }

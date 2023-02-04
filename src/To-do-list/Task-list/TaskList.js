@@ -21,7 +21,7 @@ function TaskList(props) {
               <span>{task?.name}</span>
             ) : (
               <span>
-                <del>blue</del>
+                <del>{task?.name}</del>
               </span>
             )}
             {task?.status ? (
